@@ -1,0 +1,11 @@
+# IDEs and editors
+/bin/electron-chubao-tool/node_modules
+/bin/electron-chubao-tool/out
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.zip
