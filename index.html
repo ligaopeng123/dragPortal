@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>drag</title>
+  <link href="./drag/css/drag.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="drag"></div>
+
+
+<script type="module">
+  import {Portal} from './drag/portal.js';
+
+  const _Portal = new Portal('drag');
+
+  const data = [];
+  for (let i = 0; i < 15; i++) {
+    data.push({
+      title: `我是模拟title${i}`,
+      template: document.createElement('div').innerHTML = `我是模拟内容${i}`,
+//      ondragstart: function (e, data) {
+//        console.log(e)
+//      },
+      height: '',
+      width: ''
+    });
+  }
+
+  _Portal.init(data)
+</script>
+</body>
+</html>
+
+
+
+
